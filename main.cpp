@@ -1,15 +1,12 @@
-#include <gtest/gtest.h>
+#include <iostream>
 #include "mylibs/foo.h"
+using namespace std;
 
-TEST(SumTest, A_Add_B) {
-    EXPECT_EQ (sum(1,2), 3);
-}
-
-TEST(SumTest, A_Add_Zero) {
-    EXPECT_EQ (sum(0,2), 3);
-}
+// @todo /1/ Тестирование массива как сделать
+// @todo /1/ Вынести тесты в отдельный файл
+// @todo /1/ Запуск тестов тоже вынести в отдельный файл
 
 int main(int argc, char **argv) {
-    ::testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
+    cout << sum(1,2) << endl;
+    return 0;
 }
