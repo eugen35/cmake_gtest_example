@@ -1,5 +1,5 @@
 #include <iostream>
-void hello_world()
+int sum(int a, int b)
 {
-    std::cout << "Hello, World!" << std::endl;
+    return a + b;
 }

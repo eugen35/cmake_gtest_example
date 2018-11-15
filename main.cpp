@@ -1,12 +1,12 @@
 #include <gtest/gtest.h>
 #include "mylibs/foo.h"
 
-TEST(SquareRootTest, PositiveNos1) {
-    EXPECT_EQ (3, 3);
+TEST(SumTest, A_Add_B) {
+    EXPECT_EQ (sum(1,2), 3);
 }
 
-TEST(SquareRootTest, PositiveNos2) {
-    EXPECT_EQ (3, 2);
+TEST(SumTest, A_Add_Zero) {
+    EXPECT_EQ (sum(0,2), 3);
 }
 
 int main(int argc, char **argv) {
